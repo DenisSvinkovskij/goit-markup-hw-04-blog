@@ -7,26 +7,79 @@
   --small-font-stack: 'Ubuntu', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--white-color);
   color: var(--black-color);
   font-family: var(--primary-font-stack);
   font-size: 14px;
   line-height: 1.7;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-button {
+li {
+  list-style: none;
+}
+
+p {
+  width: 420px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: inline-flex;
   font-family: inherit;
   cursor: -webkit-grab;
   font-size: 20px;
   line-height: 1.2;
+  text-decoration: none;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 22px 35px;
+  margin-top: 75px;
+  border: solid 2px;
 }
 
+.images {
+  margin-bottom: 15px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+}
 .small-text {
   font-family: var(--small-font-stack);
   font-size: 14px;
   line-height: 1.7;
   text-transform: uppercase;
+}
+
+.header {
+  margin-bottom: 100px;
+}
+
+.nav-links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  /* flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; */
+}
+
+.link {
+  display: block;
+  padding: 10px 50px;
 }
 
 .site-nav .link {
@@ -43,4 +96,17 @@ button {
 .title {
   font-size: 30px;
   line-height: 0.8;
+}
+
+.blog-section {
+  display: flex;
+}
+
+.blog {
+  display: flex;
+  flex-basis: 420px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-grow: 1;
 }
