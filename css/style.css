@@ -1,0 +1,46 @@
+:root {
+  --white-color: #fff;
+  --black-color: #626262;
+  --grey-color: #b4ad9e;
+  --accent-color: #03a9f3;
+  --primary-font-stack: 'Playfair Display', serif;
+  --small-font-stack: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-family: var(--primary-font-stack);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+button {
+  font-family: inherit;
+  cursor: -webkit-grab;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.small-text {
+  font-family: var(--small-font-stack);
+  font-size: 14px;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.site-nav .link {
+  color: var(--black-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.title {
+  font-size: 30px;
+  line-height: 0.8;
+}
